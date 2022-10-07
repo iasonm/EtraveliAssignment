@@ -37,11 +37,11 @@ class SearchMoviesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Search"
-        configureSearchBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        configureSearchBar()
     }
     
     private func configureSearchBar() {
