@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import EtraveliAssignment
 
 final class EtraveliAssignmentUITestsLaunchTests: XCTestCase {
 
