@@ -142,8 +142,9 @@ extension SearchMoviesViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let term = searchBar.text {
+            let trimmed = term.trimmed
             if !fetching {
-                search(term: term)
+                search(term: trimmed)
             }
         }
         searchBar.resignFirstResponder()

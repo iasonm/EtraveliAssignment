@@ -21,7 +21,11 @@ extension UIView {
 extension String {
     
     var isBlank: Bool {
-        trimmingCharacters(in: .whitespaces).isEmpty
+        trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+    
+    var trimmed: String {
+        trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
 }
